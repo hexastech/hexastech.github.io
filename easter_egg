@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easter Egg</title>
+<style>
+    /* Style for the Easter egg element */
+    #easterEgg {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+    /* Animation when hovering over the Easter egg */
+    #easterEgg:hover {
+        transform: rotate(360deg);
+    }
+</style>
+</head>
+<body>
+<!-- Easter egg element -->
+<div id="easterEgg"></div>
+
+<script>
+    // Function to reveal the Easter egg
+    function revealEasterEgg() {
+        alert("You found the Easter egg!");
+    }
+
+    // Add click event listener to the Easter egg element
+    document.getElementById("easterEgg").addEventListener("click", revealEasterEgg);
+</script>
+</body>
+</html>
